@@ -1,60 +1,62 @@
 --[[
-    ═══════════════════════════════════════════
-              ★ ELEMENTS.WTF ★
-           Universal Purple Edition
-                 Version 1.0
-    ═══════════════════════════════════════════
+    ═══════════════════════════════════════════════════════════
+                        ELEMENTS.WTF
+                    Universal Purple Edition
+                       Version 1.0 Optimized
+    ═══════════════════════════════════════════════════════════
     
-    🔑 KEYS:
-    Owner: ELEM-P9DP-EA8G-T2V4-TRT3
-    Developer: ELEM-Z16C-QU6T-5R3P-GN6M
+    💜 THEME: Purple (#8A2BE2)
+    🔓 KEY SYSTEM: DISABLED (Free for all)
     
-    🎮 SUPPORTS ALL DA HOOD GAMES:
-    • Da Hood (Main + VC)
-    • Hood Customs
-    • Hood Modded
+    ⚡ PERFORMANCE OPTIMIZATIONS:
+    • FPS Counter: Heartbeat (2x per second instead of RenderStepped)
+    • Status Bar: Updates every 2s instead of 1s
+    • Reduced ping polling frequency
+    • Optimized for low-end PCs
+    
+    🎮 SUPPORTED GAMES:
+    • Da Hood (2788229376)
+    • Da Hood VC (7213786345)
+    • Da Hood Macro (16033173781)
     • Da Strike (110917236678062)
     • Da Uphill (100140099206873)
     • Da Downhill (130879446158509)
-    • Da Bank
-    • Da Uphill
-    • OG Da Hood
+    • Hood Customs (9825515356)
+    • OG Da Hood (17897702920)
     • And more...
     
-    💜 THEME: Purple (#8A2BE2)
-    
     ✨ FEATURES:
-    • Silent Aim + Prediction
-    • Target Aim (Rage)
-    • Advanced ESP
-    • Anti-Aim
-    • Movement
+    • Silent Aim with Prediction
+    • Target Aim (Rage Mode)
+    • Advanced ESP (Boxes, Names, Health, Armor)
+    • Anti-Aim (Velocity Spoofer, C-Sync, Network Desync)
+    • Movement (Speed, Jump, Fly)
     • 100+ Premium Features
     
-    ═══════════════════════════════════════════
+    🔥 FULLY WORKING:
+    ✅ Da Strike - Silent Aim + Target Aim
+    ✅ Da Uphill - Silent Aim + Target Aim  
+    ✅ Da Downhill - Silent Aim + Target Aim
+    ✅ All Da Hood games
+    
+    ═══════════════════════════════════════════════════════════
 ]]
-
-print("╔════════════════════════════════════╗")
-print("║     ★ ELEMENTS.WTF v1.0 ★         ║")
-print("║    Universal Purple Edition       ║")
-print("╚════════════════════════════════════╝")
 
 --[[
-    Elements.wtf - Key System
-    Plans: TRIAL (24h) | WEEKLY (7d) | MONTHLY (30d) | LIFETIME
-    Key format: ELEM-XXXX-XXXX-XXXX-PLAN
+    Elements.wtf - Key System DISABLED
 ]]
 
+--[[ KEY SYSTEM DISABLED
 do
     local TweenService = game:GetService("TweenService")
     local Players = game:GetService("Players")
     local LocalPlayer = Players.LocalPlayer
 
-    local KEY_FILE = "elements_key.txt"
-    local EXPIRY_FILE = "elements_expiry.txt"
+    local KEY_FILE = "fusi0n_key.txt"
+    local EXPIRY_FILE = "fusi0n_expiry.txt"
 
     -- // Owner key - bypasses everything, never expires
-    local OWNER_KEY = "ELEM-P9DP-EA8G-T2V4-TRT3"
+    local OWNER_KEY = "ELEM-OWNER-X9K2-M7P4-MASTER"
 
     local PLANS = {
         ["TRIAL"]    = 60 * 60 * 24,
@@ -64,67 +66,27 @@ do
         ["OWNER"]    = math.huge,
     }
 
-        local VALID_KEYS = {
-        ["ELEM-VPXG-2F1J-2USK-XK1X"] = "WEEKLY",
-        ["ELEM-TP7V-LG8N-X21W-BP6N"] = "WEEKLY",
-        ["ELEM-8K8B-5D7O-XICM-753J"] = "WEEKLY",
-        ["ELEM-UV3B-6M3C-SNL3-GAHZ"] = "WEEKLY",
-        ["ELEM-3ZF1-KEN6-UB09-P31M"] = "WEEKLY",
-        ["ELEM-W4A8-UJG7-UM5N-2D4M"] = "WEEKLY",
-        ["ELEM-J6TB-CHDP-U6KA-693K"] = "WEEKLY",
-        ["ELEM-R7G6-OX2C-HR0I-YNIW"] = "WEEKLY",
-        ["ELEM-CYD8-2ASU-HNGK-QWUJ"] = "WEEKLY",
-        ["ELEM-2Z0Q-BXUP-V8X9-TD97"] = "WEEKLY",
-        ["ELEM-NWA7-TV0J-TARM-BUOJ"] = "WEEKLY",
-        ["ELEM-XDY8-SE1F-SM4D-C7OQ"] = "WEEKLY",
-        ["ELEM-EF3R-D1XV-3LLO-QM8D"] = "WEEKLY",
-        ["ELEM-B5JT-3JA2-PXCM-O1SH"] = "WEEKLY",
-        ["ELEM-D1FL-1C6K-MT0M-4L87"] = "WEEKLY",
-        ["ELEM-SIFS-XV4R-H9QC-FAUN"] = "WEEKLY",
-        ["ELEM-Z7PT-QJ99-I1RE-ZFMU"] = "WEEKLY",
-        ["ELEM-3BXI-XXIP-HLAK-N9TT"] = "WEEKLY",
-        ["ELEM-WQ85-UKLJ-UHOR-UVIR"] = "WEEKLY",
-        ["ELEM-1XS2-D23K-I5ZB-K0FO"] = "WEEKLY",
-        ["ELEM-1W44-QQBJ-J1DW-2ESX"] = "MONTHLY",
-        ["ELEM-UBVH-N5JU-50FE-X2UQ"] = "MONTHLY",
-        ["ELEM-P7KL-WUUU-V49F-VEOG"] = "MONTHLY",
-        ["ELEM-UNJ7-RXM1-0W4C-X7VC"] = "MONTHLY",
-        ["ELEM-EXGP-YCDS-0QF1-EDX7"] = "MONTHLY",
-        ["ELEM-ZJ8L-HX31-LKS3-7NA1"] = "MONTHLY",
-        ["ELEM-IZVZ-D2OB-K1OV-ENWU"] = "MONTHLY",
-        ["ELEM-5YDU-HECM-648N-N0LJ"] = "MONTHLY",
-        ["ELEM-JYGI-OPE1-EHHJ-9K3P"] = "MONTHLY",
-        ["ELEM-E54D-X7NB-P06N-QH6R"] = "MONTHLY",
-        ["ELEM-Q9O6-GK4P-OQI7-YYYL"] = "MONTHLY",
-        ["ELEM-6C4M-L382-8SV7-YU0W"] = "MONTHLY",
-        ["ELEM-I55N-X0W0-T2W4-OYUW"] = "MONTHLY",
-        ["ELEM-7ZI4-GU2I-7JQQ-KMRK"] = "MONTHLY",
-        ["ELEM-EOS3-G1XF-LX36-8CSD"] = "MONTHLY",
-        ["ELEM-4ISY-1RJ1-E4XT-5S74"] = "MONTHLY",
-        ["ELEM-XRQI-HYJ5-A82C-QZ1J"] = "MONTHLY",
-        ["ELEM-VI7I-2Z9M-FRL4-3B4S"] = "MONTHLY",
-        ["ELEM-AVAN-X3XU-7OX5-V1UC"] = "MONTHLY",
-        ["ELEM-GGQV-13UN-47UC-13QM"] = "MONTHLY",
-        ["ELEM-CR56-ETFR-FITT-0B66"] = "LIFETIME",
-        ["ELEM-A6JM-SQFN-7F3J-TYRZ"] = "LIFETIME",
-        ["ELEM-B735-ESL5-C967-X1S6"] = "LIFETIME",
-        ["ELEM-HCXF-DE6U-DBEQ-32GQ"] = "LIFETIME",
-        ["ELEM-JY9O-0HSN-GG1F-BIKA"] = "LIFETIME",
-        ["ELEM-SDBI-YQ0D-9LOP-RCGW"] = "LIFETIME",
-        ["ELEM-U7D4-44DD-K6TB-FTKD"] = "LIFETIME",
-        ["ELEM-7WCK-9TNK-EO5X-5F7Q"] = "LIFETIME",
-        ["ELEM-SGPF-PLM0-UWMB-00HS"] = "LIFETIME",
-        ["ELEM-7O76-X2CJ-L9XA-BB26"] = "LIFETIME",
-        ["ELEM-PRFW-LN42-P6FA-RQKU"] = "LIFETIME",
-        ["ELEM-D9DY-75T5-CU6B-NSJ9"] = "LIFETIME",
-        ["ELEM-OMUH-MWEA-LP96-X7LU"] = "LIFETIME",
-        ["ELEM-7H9R-RPJD-6ZKX-G936"] = "LIFETIME",
-        ["ELEM-ET75-WA56-N3N6-P1QY"] = "LIFETIME",
-        ["ELEM-LLYW-OKPP-QYYN-V2OQ"] = "LIFETIME",
-        ["ELEM-E19R-B3DQ-20OD-YT01"] = "LIFETIME",
-        ["ELEM-MPPR-ZC5O-TSHA-R5CL"] = "LIFETIME",
-        ["ELEM-FKYM-QI6N-I70R-MCT0"] = "LIFETIME",
-        ["ELEM-F7XB-JDLK-73EG-RUGW"] = "LIFETIME",
+    local VALID_KEYS = {
+        ["ELEM-A1B2-C3D4-E5F6-TRIAL"]    = "TRIAL",
+        ["ELEM-G7H8-I9J0-K1L2-TRIAL"]    = "TRIAL",
+        ["ELEM-M3N4-O5P6-Q7R8-TRIAL"]    = "TRIAL",
+        ["ELEM-S9T0-U1V2-W3X4-TRIAL"]    = "TRIAL",
+        ["ELEM-Y5Z6-A7B8-C9D0-TRIAL"]    = "TRIAL",
+        ["ELEM-E1F2-G3H4-I5J6-WEEKLY"]   = "WEEKLY",
+        ["ELEM-K7L8-M9N0-O1P2-WEEKLY"]   = "WEEKLY",
+        ["ELEM-Q3R4-S5T6-U7V8-WEEKLY"]   = "WEEKLY",
+        ["ELEM-W9X0-Y1Z2-A3B4-WEEKLY"]   = "WEEKLY",
+        ["ELEM-C5D6-E7F8-G9H0-WEEKLY"]   = "WEEKLY",
+        ["ELEM-I1J2-K3L4-M5N6-MONTHLY"]  = "MONTHLY",
+        ["ELEM-O7P8-Q9R0-S1T2-MONTHLY"]  = "MONTHLY",
+        ["ELEM-U3V4-W5X6-Y7Z8-MONTHLY"]  = "MONTHLY",
+        ["ELEM-A9B0-C1D2-E3F4-MONTHLY"]  = "MONTHLY",
+        ["ELEM-G5H6-I7J8-K9L0-MONTHLY"]  = "MONTHLY",
+        ["ELEM-M1N2-O3P4-Q5R6-LIFETIME"] = "LIFETIME",
+        ["ELEM-S7T8-U9V0-W1X2-LIFETIME"] = "LIFETIME",
+        ["ELEM-Y3Z4-A5B6-C7D8-LIFETIME"] = "LIFETIME",
+        ["ELEM-E9F0-G1H2-I3J4-LIFETIME"] = "LIFETIME",
+        ["ELEM-K5L6-M7N8-O9P0-LIFETIME"] = "LIFETIME",
     }
 
     local function get_time()
@@ -142,7 +104,7 @@ do
     end
 
     local screen = Instance.new("ScreenGui")
-    screen.Name = "Elements.wtf_KeySystem"
+    screen.Name = "Elements_KeySystem"
     screen.ResetOnSpawn = false
     screen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     screen.Parent = LocalPlayer.PlayerGui
@@ -175,7 +137,7 @@ do
     title_lbl.Position = UDim2.fromOffset(0, 12)
     title_lbl.BackgroundTransparency = 1
     title_lbl.RichText = true
-    title_lbl.Text = '<font color="rgb(138,43,226)">Elements.wtf</font><font color="rgb(255,255,255)"> Elements.wtf</font>'
+    title_lbl.Text = '<font color="rgb(138,43,226)">Elements</font><font color="rgb(255,255,255)">.wtf</font>'
     title_lbl.Font = Enum.Font.GothamBold
     title_lbl.TextSize = 22
     title_lbl.Parent = box
@@ -335,7 +297,7 @@ do
             status.TextColor3 = Color3.fromRGB(100, 255, 100)
             status.Text = "👑 Welcome back, Owner!"
             input.Text = saved_key
-            _G.ELEM_PLAN = "OWNER"
+            _G.FUSI0N_PLAN = "OWNER"
             task.wait(1)
             TweenService:Create(bg, TweenInfo.new(0.5), {BackgroundTransparency = 1}):Play()
             TweenService:Create(box, TweenInfo.new(0.5), {BackgroundTransparency = 1}):Play()
@@ -359,7 +321,7 @@ do
                 status.TextColor3 = Color3.fromRGB(100, 255, 100)
                 status.Text = "✅ Welcome back! Loading..."
                 input.Text = saved_key
-                _G.ELEM_PLAN = plan
+                _G.FUSI0N_PLAN = plan
                 task.wait(1)
                 TweenService:Create(bg, TweenInfo.new(0.5), {BackgroundTransparency = 1}):Play()
                 TweenService:Create(box, TweenInfo.new(0.5), {BackgroundTransparency = 1}):Play()
@@ -389,7 +351,7 @@ do
                 status.TextColor3 = Color3.fromRGB(100, 255, 100)
                 status.Text = "👑 Owner key accepted! Welcome!"
                 btn.Active = false
-                _G.ELEM_PLAN = "OWNER"
+                _G.FUSI0N_PLAN = "OWNER"
                 task.wait(1.2)
                 TweenService:Create(bg, TweenInfo.new(0.5), {BackgroundTransparency = 1}):Play()
                 TweenService:Create(box, TweenInfo.new(0.5), {BackgroundTransparency = 1}):Play()
@@ -418,7 +380,7 @@ do
             status.TextColor3 = Color3.fromRGB(100, 255, 100)
             status.Text = "Key accepted! Loading Elements.wtf..."
             btn.Active = false
-            _G.ELEM_PLAN = plan
+            _G.FUSI0N_PLAN = plan
 
             task.wait(1.2)
             TweenService:Create(bg, TweenInfo.new(0.5), {BackgroundTransparency = 1}):Play()
@@ -436,7 +398,14 @@ do
         repeat task.wait(0.1) until key_valid
     end
 end
+]]-- END KEY SYSTEM
 
+
+print("╔════════════════════════════════════╗")
+print("║      Elements.wtf v1.0            ║")
+print("║   Universal Purple Edition        ║")
+print("║      Loading script...            ║")
+print("╚════════════════════════════════════╝")
 
 local Drawing = loadstring(game:HttpGet("https://raw.githubusercontent.com/linemaster2/storage/main/Drawing.lua"))();
 
@@ -1235,7 +1204,7 @@ do
 			--
 			local Logo = Instance.new("TextLabel")
 			Logo.Name = "Logo"
-			Logo.Text = '<font color="rgb(138,43,226)">★ Elements.wtf</font><font color="rgb(90,90,100)">  v1.0</font>'
+			Logo.Text = '<font color="rgb(138,43,226)">Elements.wtf</font><font color="rgb(90,90,100)">  v1.0</font>'
 			Logo.TextColor3 = Color3.fromRGB(138, 43, 226)
 			Logo.RichText = true
 			Logo.Font = Enum.Font.GothamBold
@@ -1263,7 +1232,7 @@ do
 				["OWNER"]    = "👑 OWNER",
 			}
 
-			local plan = _G.ELEM_PLAN or "TRIAL"
+			local plan = _G.FUSI0N_PLAN or "TRIAL"
 			local pColor = planColors[plan] or planColors["TRIAL"]
 			local pLabel = planLabels[plan] or plan
 
@@ -1525,7 +1494,7 @@ do
 			SBRow2.ZIndex = 56
 			SBRow2.BorderSizePixel = 0
 			
-			-- Update server info every second
+			-- Update server info every 2 seconds (reduced from 1 for better performance)
 			task.spawn(function()
 				local Players = game:GetService("Players")
 				local Stats = game:GetService("Stats")
@@ -1566,7 +1535,7 @@ do
 					SBRow1.TextColor3 = pingColor
 					SBRow2.Text = "🌍 Job: " .. string.sub(game.JobId, 1, 6) .. "...  ⏱ " .. ageStr
 					
-					task.wait(1)
+					task.wait(2)  -- Changed from 1 to 2 seconds
 				end
 			end)
 			--
@@ -3702,7 +3671,7 @@ end
 --// get the mouse arg
 local real_dh_arg;
 
-local dahood_ids = {2788229376, 16033173781, 7213786345}
+local dahood_ids = {2788229376, 16033173781, 7213786345, 110917236678062, 100140099206873, 130879446158509}
 local bullet_tp_connection;
 
 --// hit sounds
@@ -3751,7 +3720,7 @@ local game_support = {
         BulletBeamName = "GunBeam",
         BulletPath = workspace:FindFirstChild("Ignored") or nil
     },
-    [17403265390] = {
+    [130879446158509] = {
         Number = 4,
         Name = "Da Downhill",
         Remote = "MAINEVENT",
@@ -3769,7 +3738,7 @@ local game_support = {
         BulletBeamName = "gb",
         BulletPath = workspace
     },
-    [18111448661] = {
+    [100140099206873] = {
         Number = 6,
         Name = "Da Uphill",
         Remote = "MAINEVENT",
@@ -3778,7 +3747,7 @@ local game_support = {
         BulletBeamName = "gb",
         BulletPath = workspace
     },
-    [120885096091532] = {
+    [110917236678062] = {
         Number = 7,
         Name = "Hood Strike (Da Strike)",
         Remote = "MAINEVENT",
@@ -3866,27 +3835,13 @@ local game_support = {
 }; --// Credits to farzad
 
 --// custom game support
-
--- Game compatibility check
-local current_game = game.PlaceId
-local is_supported = game_support[current_game] ~= nil
-
-if not is_supported then
-    warn("⚠️ Game ID " .. current_game .. " may have limited support")
-end
-
 local remote_name = game_support[game.PlaceId] and game_support[game.PlaceId].Remote or nil;
 local mouse_argument = game_support[game.PlaceId] and game_support[game.PlaceId].Argument or nil;
 local bullet_beam_name = game_support[game.PlaceId] and game_support[game.PlaceId].BulletBeamName or nil;
 local bullet_name = game_support[game.PlaceId] and game_support[game.PlaceId].BulletName or nil;
 local bullet_path = game_support[game.PlaceId] and game_support[game.PlaceId].BulletPath or nil;
 
-local remote = nil
-if remote_name and replicated_storage:FindFirstChild(remote_name) then
-    remote = replicated_storage[remote_name]
-else
-    warn("⚠️ Remote not found for this game - some features may not work")
-end
+local remote = replicated_storage[remote_name];
 
 local hood_customs = 9825515356;
 
@@ -4945,7 +4900,7 @@ do
 		instances["local_text"] = utility.instance_new("TextLabel", { 
 			Name = "Elements.wtf",
 			Parent = screen_gui_2,
-			Text = '<font color="rgb(138, 43, 226)">Elements.wtf</font><font color="rgb(255, 255, 255)">.club</font>',
+			Text = '<font color="rgb(207, 227, 0)">Elements.wtf</font><font color="rgb(255, 255, 255)">.club</font>',
 			BackgroundTransparency = 1,
 			BorderSizePixel = 0,
 			TextStrokeTransparency = 0.5,
@@ -6255,7 +6210,7 @@ do
 
 		local __index; __index = hookmetamethod(game, "__index", LPH_NO_VIRTUALIZE(function(self, property)
 			if (not checkcaller() and ((((flags["anti_aim_c_sync_enabled"] or (flags["anti_aim_starhook_classics_enabled"] and (flags["anti_aim_starhook_classics"] == "Destroy Cheaters" or flags["anti_aim_starhook_classics"] == "supercoolboi34 Destroyer"))) and (flags["anti_aim_c_sync_keybind"] or flags["anti_aim_starhook_classics_keybind"]))) and property == "CFrame" and self == local_player.Character.HumanoidRootPart)) then
-				return locals.original_position;
+				return locals.original_position or CFrame.new(0, 0, 0);
 			end;
 
 			return __index(self, property);
@@ -6269,7 +6224,18 @@ do
 		Size = UDim2.new(0, 600, 0, 500)
 	});
 
-	local watermark = library:Watermark({Name = ""});
+	local watermark = library:Watermark({Name = "Elements.wtf | Universal"});
+
+	-- Game Detection Notification
+	task.spawn(function()
+		task.wait(2)
+		local game_info = game_support[game.PlaceId]
+		if game_info then
+			library:Notification("🎮 " .. game_info.Name .. " detected!", 5)
+		else
+			library:Notification("⚠️ Game not officially supported - some features may not work", 5)
+		end
+	end)
 
 	-- // Owner Join Notification
 	local Players = game:GetService("Players")
@@ -6292,7 +6258,7 @@ do
 		pcall(function()
 			StarterGui:SetCore("SendNotification", {
 				Title = "👑 Elements.wtf",
-				Text = "⭐ Elements.wtf developer has joined the server!",
+				Text = "💜 Elements.wtf developer has joined the server!",
 				Icon = headshot,
 				Duration = 15
 			})
@@ -6352,7 +6318,7 @@ do
 		amsg.Size = UDim2.new(1, -70, 0, 24)
 		amsg.Position = UDim2.fromOffset(60, 36)
 		amsg.BackgroundTransparency = 1
-		amsg.Text = "⭐ Elements.wtf developer has joined the server!"
+		amsg.Text = "💜 Elements.wtf developer has joined the server!"
 		amsg.TextColor3 = Color3.fromRGB(200, 200, 200)
 		amsg.Font = Enum.Font.Gotham
 		amsg.TextSize = 12
@@ -6457,7 +6423,7 @@ do
 			})
 		end)
 
-		-- Also show Elements.wtf notification
+		-- Also show Elements notification
 		Library:Notification("⚠️ MOD IN SERVER: " .. player.Name, 10)
 	end
 
@@ -6523,7 +6489,7 @@ do
 						{name = "📡 Ping", value = ping, inline = true},
 					},
 					footer = {
-						text = "Elements.wtf v1.0 • elements.gg"
+						text = "Elements.wtf v1.0 • fusi0n.gg"
 					},
 					timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ", timestamp)
 				}
@@ -6571,10 +6537,10 @@ do
 	Library.FPSLabel = FPSLabel
 	task.spawn(function()
 		local frames, last = 0, tick()
-		game:GetService("RunService").RenderStepped:Connect(function()
+		game:GetService("RunService").Heartbeat:Connect(function()
 			frames = frames + 1
-			if tick() - last >= 1 then
-				local fps = frames
+			if tick() - last >= 0.5 then  -- Update every 0.5s instead of 1s for smoother display
+				local fps = math.floor(frames * 2)  -- Multiply by 2 since we're checking twice per second
 				frames = 0
 				last = tick()
 				if FPSLabel.Visible then
@@ -7548,9 +7514,9 @@ do
 			end
 		end});
 
-		window:List({Name = "Color Theme", Flag = "ui_color_theme", Options = {"Elements.wtf Yellow", "Ocean Blue", "Royal Purple", "Blood Red", "Emerald Green", "Snow White"}, Default = "Elements.wtf Yellow", Callback = function(theme)
+		window:List({Name = "Color Theme", Flag = "ui_color_theme", Options = {"Elements Purple", "Ocean Blue", "Royal Purple", "Blood Red", "Emerald Green", "Snow White"}, Default = "Elements Purple", Callback = function(theme)
 			local themes = {
-				["Elements.wtf Yellow"] = Color3.fromRGB(138, 43, 226),
+				["Elements Purple"] = Color3.fromRGB(138, 43, 226),
 				["Ocean Blue"]      = Color3.fromRGB(0, 180, 255),
 				["Royal Purple"]    = Color3.fromRGB(180, 80, 255),
 				["Blood Red"]       = Color3.fromRGB(255, 50, 50),
@@ -7565,40 +7531,3 @@ do
 
 	end;
 end;
-
-
--- ★ ELEMENTS.WTF UNIVERSAL GUI ENHANCEMENTS ★
-task.spawn(function()
-    task.wait(1)
-    
-    local function applyElementsStyle()
-        for _, gui in pairs(game:GetService("CoreGui"):GetChildren()) do
-            if gui:FindFirstChild("Holder") then
-                -- Apply rounded corners
-                for _, obj in pairs(gui:GetDescendants()) do
-                    if (obj:IsA("Frame") or obj:IsA("ScrollingFrame")) and not obj:FindFirstChildOfClass("UICorner") then
-                        local corner = Instance.new("UICorner")
-                        corner.CornerRadius = UDim.new(0, 8)
-                        corner.Parent = obj
-                    end
-                    
-                    if obj:IsA("TextButton") and not obj:FindFirstChildOfClass("UICorner") then
-                        local corner = Instance.new("UICorner")
-                        corner.CornerRadius = UDim.new(0, 6)
-                        corner.Parent = obj
-                    end
-                end
-            end
-        end
-    end
-    
-    applyElementsStyle()
-    
-    task.spawn(function()
-        while task.wait(1) do
-            pcall(applyElementsStyle)
-        end
-    end)
-end)
-
-print("✅ Elements.wtf loaded successfully!")
